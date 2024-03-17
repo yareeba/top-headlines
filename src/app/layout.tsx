@@ -23,7 +23,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
     <html lang="en" className={abhayaLibre.className}>
       <body>
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

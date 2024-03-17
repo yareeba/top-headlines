@@ -1,11 +1,7 @@
 import Filters from "../components/Filters";
 
 const Page = () => {
-  return (
-    <main>
-      <Filters />
-    </main>
-  );
+  return <Filters />;
 };
 
 export default Page;
