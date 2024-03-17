@@ -11,6 +11,6 @@ const CountryPage = async ({ params }: CountryPageProps) => {
   return (
     <Headlines values={topHeadlines} />
   );
-}
+};
 
 export default CountryPage;
