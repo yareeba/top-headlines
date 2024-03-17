@@ -28,3 +28,11 @@ export const FilterImage = styled.img`
     height: 75px;
   }
 `;
+
+export const CountrySelectWrapper = styled.div`
+  width: 100px;
+
+  @media only screen and (min-width: ${breakpoints.Tablet}px) {
+    width: 300px;
+  }
+`;
