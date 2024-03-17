@@ -30,6 +30,10 @@ export const HeadlinesGrid = styled.div`
   @media only screen and (min-width: ${breakpoints.Desktop}px) {
     padding: 16px 128px;
   }
+
+  @media only screen and (min-width: ${breakpoints.DesktopLarge}px) {
+    padding: 16px 350px;
+  }
 `;
 
 export const HeadlineItem = styled.div`
