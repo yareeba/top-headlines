@@ -7,13 +7,15 @@ export interface CountrySelectOption {
 
 export interface Headline {
   title: string;
-  author: string;
+  author: string | null;
   source: {
     id: string | null;
     name: string;
   };
   publishedAt: string;
   url: string;
+  urlToImage?: string;
+  content?: string;
 }
 
 export interface HeadlinesData {

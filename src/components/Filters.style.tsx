@@ -7,6 +7,8 @@ export const FiltersSection = styled.section`
   align-items: center;
   gap: 8px;
   font-size: 10px;
+  background-color: #d6ebc3;
+  padding: 8px 0;
 
   @media only screen and (min-width: ${breakpoints.MobileMedium}px) {
     font-size: 12px;
