@@ -2,12 +2,23 @@ import styled from "styled-components";
 import { breakpoints } from "../lib/media";
 
 export const HeadlinesSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+`;
+
+export const HeadlinesCountryHeadingH2 = styled.h2`
+  font-size: 48px;
+  font-weight: bold;
+  margin: 16px 0;
+`;
+
+export const HeadlinesGrid = styled.div`
   display: grid;
-  padding: 16px;
+  padding: 0 16px 16px 16px;
   row-gap: 24px;
   column-gap: 24px;
-  margin: auto;
-  width: fit-content;
 
   @media only screen and (min-width: ${breakpoints.Tablet}px) {
     grid-template-columns: repeat(2, 1fr);

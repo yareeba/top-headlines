@@ -4,14 +4,14 @@ import { useRouter } from "next/navigation";
 import Select from "react-select";
 import { CountryCode, CountrySelectOption } from "../lib/types";
 import { useState } from "react";
+import { countryMapping } from "../lib/constants";
 
-const countrySelectOptions: CountrySelectOption[] = [
-  { value: "gb", label: "United Kingdom" },
-  { value: "us", label: "United States" },
-  { value: "au", label: "Australia" },
-  { value: "fr", label: "France" },
-  { value: "in", label: "India" },
-];
+const countrySelectOptions: CountrySelectOption[] = Object.keys(
+  countryMapping
+).map((countryCode: CountryCode) => ({
+  value: countryCode,
+  label: countryMapping[countryCode],
+}));
 
 interface CountrySelectProps {
   value?: CountryCode;
