@@ -5,6 +5,7 @@ export const HeaderSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 `;
 
 export const HeaderH1 = styled.h1`
@@ -12,4 +13,4 @@ export const HeaderH1 = styled.h1`
     font-size: 48px;
     margin: 16px 0;
   }
-`
+`;

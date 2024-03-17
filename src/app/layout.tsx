@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import { Noticia_Text } from "next/font/google";
+import { Abhaya_Libre } from "next/font/google";
 import Header from "../components/Header";
 
-const noticia = Noticia_Text({
+const abhayaLibre = Abhaya_Libre({
   subsets: ["latin"],
-  variable: "--font-noticia",
+  variable: "--font-abhaya-libre",
   display: "swap",
   weight: "400",
 });
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <html lang="en" className={noticia.className}>
+    <html lang="en" className={abhayaLibre.className}>
       <body>
         <Header />
         {children}
