@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Abhaya_Libre } from "next/font/google";
 import Header from "../components/Header";
+import "./globals.css";
 
 const abhayaLibre = Abhaya_Libre({
   subsets: ["latin"],
