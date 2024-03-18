@@ -4,6 +4,8 @@ A Next.js/React application that displays the top 5 news headlines for the UK, U
 
 ## Getting Started
 
+### Runnning Locally
+
 Create a `.env.local` file in the root of the directory, copying the contents of `.env.example`. Add your News API key here.
 
 To run the application:
