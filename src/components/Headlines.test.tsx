@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Headlines from "./Headlines";
+import { countryMapping } from "../lib/constants";
 
 const mockHeadlines = [
   {
@@ -28,9 +29,19 @@ const mockHeadlines = [
 
 describe("Headlines", () => {
   test("renders all the headlines that are provided", () => {
-    render(<Headlines values={mockHeadlines} />);
+    const australiaCountryCode = "au";
+    render(
+      <Headlines values={mockHeadlines} countryCode={australiaCountryCode} />
+    );
 
-    expect(screen.getByRole('link', { name: mockHeadlines[0].title })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: mockHeadlines[1].title })).toBeInTheDocument();
+    expect(
+      screen.getByText(countryMapping[australiaCountryCode])
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: mockHeadlines[0].title })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: mockHeadlines[1].title })
+    ).toBeInTheDocument();
   });
 });
