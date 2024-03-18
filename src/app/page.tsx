@@ -1,3 +1,7 @@
-export default function Page() {
-  return <h1>Hello, Next.js!</h1>
-}
+import Filters from "../components/Filters";
+
+const Page = () => {
+  return <Filters />;
+};
+
+export default Page;
